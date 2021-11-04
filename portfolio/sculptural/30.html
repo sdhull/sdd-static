@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stephen Day Design</title>
+    <link href="/assets/application.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/colorbox.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/blogs.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/contacts.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/fonts.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/print.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/screen.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/assets/jquery.js?body=1" type="text/javascript"></script>
+<script src="/assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+<script src="/assets/jquery.colorbox.js?body=1" type="text/javascript"></script>
+<script src="/assets/handlebars.js?body=1" type="text/javascript"></script>
+<script src="/assets/contacts.js?body=1" type="text/javascript"></script>
+<script src="/assets/application.js?body=1" type="text/javascript"></script>
+    <!--[if IE]>
+      <link href="/assets/ie.css?body=1" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if lte IE 7]>
+      <link href="/assets/ie7.css?body=1" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="/assets/html5shiv.js"></script>
+    <![endif]-->
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="JIg+SVMQdLyR8pOLmfCxQ6jzQ/cLEnEk/XayUV3UBvI=" name="csrf-token" />
+  </head>
+  <body>
+    <header>
+      <a href="/"><img alt="Mast_head" id="mast_head" src="/assets/mast_head.png" /></a>
+      <img alt="Logo" id="logo" src="/assets/logo.png" />
+    </header>
+    <div id="pagewrap">
+      <nav>
+
+        <ul>
+          <li><a href="/portfolio" class=" ">PORTFOLIO</a></li>
+          <li><a href="/about" class=" ">ABOUT</a></li>
+          <li><a href="/blog" class=" ">BLOG</a></li>
+          <li><a href="/contact" class=" ">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div id="main" class="projects show">
+        <p id="notice"></p>
+        <p id="alert"></p>
+        <section id="left_side">
+  <ul>
+    <li>
+      <a href="/portfolio/residential">RESIDENTIAL</a>
+      <ul class="submenu">
+          <li><a href="/portfolio/residential/14" class=" ">North Beach Penthouse</a></li>
+          <li><a href="/portfolio/residential/38" class=" ">Acacia Dining Table</a></li>
+          <li><a href="/portfolio/residential/26" class=" ">Trinity Rd., Sonoma</a></li>
+          <li><a href="/portfolio/residential/16" class=" ">Nevada St., S.F.</a></li>
+          <li><a href="/portfolio/residential/25" class=" ">Media Cabinet</a></li>
+          <li><a href="/portfolio/residential/27" class=" ">Woodland Ct.</a></li>
+          <li><a href="/portfolio/residential/15" class=" ">Resin-top Bar</a></li>
+          <li><a href="/portfolio/residential/17" class=" ">Mahogany Platform Bed</a></li>
+          <li><a href="/portfolio/residential/19" class=" ">Closets</a></li>
+          <li><a href="/portfolio/residential/18" class=" ">Rolling Wardrobes</a></li>
+          <li><a href="/portfolio/residential/13" class=" ">21st St., S.F.</a></li>
+          <li><a href="/portfolio/residential/36" class=" ">Santa Cruz Bedroom Set</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="/portfolio/commercial">COMMERCIAL</a>
+      <ul class="submenu">
+          <li><a href="/portfolio/commercial/12" class=" ">Creative Lift</a></li>
+          <li><a href="/portfolio/commercial/41" class=" ">Cherry Bar</a></li>
+          <li><a href="/portfolio/commercial/5" class=" ">Bailey&#x27;s Cafe</a></li>
+          <li><a href="/portfolio/commercial/7" class=" ">Bellanico Restaurant</a></li>
+          <li><a href="/portfolio/commercial/29" class=" ">SOL Physical Therapy</a></li>
+          <li><a href="/portfolio/commercial/28" class=" ">Perforce Podium</a></li>
+          <li><a href="/portfolio/commercial/10" class=" ">510 Media Wall</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="/portfolio/sculptural">SCULPTURAL</a>
+      <ul class="submenu">
+          <li><a href="/portfolio/sculptural/30" class=" current">Perforce Software</a></li>
+          <li><a href="/portfolio/sculptural/34" class=" ">Concrete Array</a></li>
+          <li><a href="/portfolio/sculptural/39" class=" ">Timbuk2</a></li>
+          <li><a href="/portfolio/sculptural/33" class=" ">Tools of the Trade</a></li>
+          <li><a href="/portfolio/sculptural/40" class=" ">Midnight Stack</a></li>
+          <li><a href="/portfolio/sculptural/32" class=" ">Seison Restaurant</a></li>
+          <li><a href="/portfolio/sculptural/35" class=" ">Exploded / Expanded</a></li>
+          <li><a href="/portfolio/sculptural/37" class=" ">X-Rays</a></li>
+      </ul>
+    </li>
+  </ul>
+  <script type="text/javascript">
+    $('#left_side > ul > li > a').click(function(e) {
+      var this_one = $(this).parent().find("ul.submenu");
+      var others = $(this).parent().parent().find("ul.submenu").not(this_one);
+      others.hide('slow');
+      this_one.toggle('slow');
+      return false;
+      });
+      $("ul.submenu").each(function(){
+      if($(this).find(".current").length < 1){
+        $(this).hide();
+      }
+    });
+  </script>
+</section>
+
+<section id="right_side">
+  <div id="gallery">
+    <ul>
+        <li><a href="http://s3.amazonaws.com/stevendaydesign/images/137/original/perforce-4a_small.jpg" data-gallery-url="http://s3.amazonaws.com/stevendaydesign/images/137/gallery/perforce-4a_small.jpg" data-id="137"><img alt="Perforce-4a_small" src="http://s3.amazonaws.com/stevendaydesign/images/137/thumb/perforce-4a_small.jpg" /></a></li>
+        <li><a href="http://s3.amazonaws.com/stevendaydesign/images/139/original/perforce-2_small.jpg" data-gallery-url="http://s3.amazonaws.com/stevendaydesign/images/139/gallery/perforce-2_small.jpg" data-id="139"><img alt="Perforce-2_small" src="http://s3.amazonaws.com/stevendaydesign/images/139/thumb/perforce-2_small.jpg" /></a></li>
+        <li><a href="http://s3.amazonaws.com/stevendaydesign/images/138/original/perforce-1a_small.jpg" data-gallery-url="http://s3.amazonaws.com/stevendaydesign/images/138/gallery/perforce-1a_small.jpg" data-id="138"><img alt="Perforce-1a_small" src="http://s3.amazonaws.com/stevendaydesign/images/138/thumb/perforce-1a_small.jpg" /></a></li>
+        <li><a href="http://s3.amazonaws.com/stevendaydesign/images/140/original/SDD-03_small.jpg" data-gallery-url="http://s3.amazonaws.com/stevendaydesign/images/140/gallery/SDD-03_small.jpg" data-id="140"><img alt="Sdd-03_small" src="http://s3.amazonaws.com/stevendaydesign/images/140/thumb/SDD-03_small.jpg" /></a></li>
+        <li><a href="http://s3.amazonaws.com/stevendaydesign/images/142/original/East_sketch_small.jpg" data-gallery-url="http://s3.amazonaws.com/stevendaydesign/images/142/gallery/East_sketch_small.jpg" data-id="142"><img alt="East_sketch_small" src="http://s3.amazonaws.com/stevendaydesign/images/142/thumb/East_sketch_small.jpg" /></a></li>
+    </ul>
+  </div>
+  <div id="big_view">
+    <div class="image_wrap">
+      <img alt="Perforce-4a_small" data-id="137" src="http://s3.amazonaws.com/stevendaydesign/images/137/gallery/perforce-4a_small.jpg" />
+    </div>
+    <div class="description">
+      <p>Perforce Softare - Alameda, Calif. Fiber optic animated lighting controller. Diffusers in aluminum and acrylic with embedded glass fibers.  </p>
+    </div>
+    
+  </div>
+</section>
+<script type="text/javascript">
+  // control project description
+  var fader = setTimeout(function(){
+    $(".description").fadeOut(600);
+  }, 9000);
+  $("#big_view").hover(function(){
+    clearTimeout(fader);
+    $(".description").fadeIn(300);
+  }, function(){
+    $(".description").fadeOut(300);
+  });
+
+  // preload images
+  $("#gallery a").each(function(){
+    var url = $(this).attr("data-gallery-url");
+    var img = new Image();
+    img.src = url;
+  });
+
+  // make gallery work
+  $("#gallery a").click(function(){
+    var $this = $(this);
+    if($this.hasClass('make_it_bigger')){
+      return true;
+    }
+    var url = $this.attr("data-gallery-url");
+    var img = new Image();
+    img.src = url;
+    $(img).hide().attr("data-id", $this.attr("data-id")).insertAfter("#big_view .image_wrap").wrap("<div class='image_wrap' />").fadeIn('medium');
+    $("#big_view .image_wrap:first").fadeOut('medium', function(){
+      $(this).remove();
+    });
+    return false;
+  });
+
+  var $gallery = $("#gallery a").colorbox({rel: 'gallery', maxWidth: "100%", maxHeight: "100%"});
+  $("#big_view").on("click", ".image_wrap img", function(e){
+    e.preventDefault();
+    var $this = $(this);
+    var gallery_entry = $("#gallery [data-id="+$this.attr("data-id")+"]");
+    gallery_entry.addClass("make_it_bigger").click().removeClass("make_it_bigger");
+    false;
+  });
+</script>
+
+      </div>
+    </div>
+    <footer>
+      <p>Stephen Day Design</p>
+      <p>510.516.3687</p>
+      <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%69%6e%66%6f@%73%74%65%70%68%65%6e%64%61%79%64%65%73%69%67%6e.%63%6f%6d">&#105;&#110;&#102;&#111;&#32;&#40;&#97;&#116;&#41;&#32;&#115;&#116;&#101;&#112;&#104;&#101;&#110;&#100;&#97;&#121;&#100;&#101;&#115;&#105;&#103;&#110;&#32;&#40;&#100;&#111;&#116;&#41;&#32;&#99;&#111;&#109;</a></p>
+    </footer>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-1991872-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
